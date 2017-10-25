@@ -1,29 +1,29 @@
-public class ChicagoPizzaStore extends PizzaStore {
+public class NYPizzaStore extends PizzaStore {
 
    protected Pizza createPizza(String item) {
       Pizza pizza = null;
       PizzaIngredientFactory ingredientFactory = 
-         new ChicagoPizzaIngredientFactory();
+         new NYPizzaIngredientFactory();
 
       if (item.equals("cheese")) {
 
          pizza = new CheesePizza(ingredientFactory);
-         pizza.setName("Chicago Style Cheese Pizza");
+         pizza.setName('New York Style Cheese Pizza');
 
       } else if (item.equals("veggie")) {
 
          pizza = new VeggiePizza(ingredientFactory);
-         pizza.setName("Chicago Style Veggie Pizza");
+         pizza.setName('New York Style Veggie Pizza');
 
       } else if (item.equals("clam")) {
 
          pizza = new ClamPizza(ingredientFactory);
-         pizza.setName("Chicago Style Clam Pizza");
+         pizza.setName('New York Style Clam Pizza');
 
       } else if (item.equals("pepperoni")) {
 
          pizza = new PepperoniPizza(ingredientFactory);
-         pizza.setName("Chicago Style Pepperoni Pizza");
+         pizza.setName('New York Style Pepperoni Pizza');
 
       } 
       return pizza;

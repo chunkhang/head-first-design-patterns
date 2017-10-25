@@ -21,7 +21,7 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
       return new SlicedPepperoni();
    }
 
-   public Clams createClam() {
+   public Clams createClams() {
       return new FreshClams();
    }
    
